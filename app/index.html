@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+
+
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Home Furniture & Decor</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__wrapper">
+            <div class="header__info">
+              <ul class="information">
+                <li class="information__item information__item--more">
+                  <a class="information__link link-animation" href="#">
+                    <svg>
+                      <use xlink:href="images/sprite.svg#icon-del"></use>
+                    </svg>
+                    Delevery
+                  </a>
+                </li>
+                <li class="information__item information__item--more">
+                  <a class="information__link link-animation" href="#">
+                    <svg>
+                      <use xlink:href="images/sprite.svg#icon-tel"></use>
+                    </svg>
+                    Address
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="information">
+              <li class="information__item">
+                <a class="information__link link-animation" href="#">SPECIAL</a>
+              </li>
+              <li class="information__item">
+                <a class="information__link link-animation" href="#">FAQ</a>
+              </li>
+              <li class="information__item">
+                <a class="information__link link-animation" href="#"
+                  >CONTACTS</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <div class="container">
+          <div class="header__wrapper">
+            <a class="logo" href="#">
+              <img
+                class="logo__img"
+                src="images/logo.svg"
+                alt="logo"
+                width="70"
+                height="50"
+              />
+            </a>
+
+            <form class="search-form" action="#">
+              <label class="sr-only" for="form-search">
+                Product Search Form</label
+              >
+              <input
+                class="search-form__input"
+                id="form-search"
+                type="search"
+                placeholder="Search..."
+                required
+                name="search"
+              />
+            </form>
+
+            <ul class="user-nav">
+              <li class="user-nav__item">
+                <button class="user-nav__btn" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#user-link"></use>
+                  </svg>
+                  <span class="sr-only">Go to profile</span>
+                </button>
+              </li>
+              <li class="user-nav__item">
+                <button class="user-nav__btn" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#favorite"></use>
+                  </svg>
+                  <span class="sr-only"> go to favorite</span>
+                  <span class="user-nav__num"> 12 </span>
+                </button>
+              </li>
+              <li class="user-nav__item">
+                <button class="user-nav__btn" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#cart"></use>
+                  </svg>
+                  <span class="sr-only"> go to cart</span>
+                  <span class="user-nav__num"> 12 </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero-slider">
+        <h1 class="sr-only">best shop</h1>
+        <ul class="hero-slider__inner">
+          <li
+            class="hero-slider__items"
+            style="background-image: url(images/hero-slider/slider1.jpg)"
+          >
+            <div class="hero-slider__item">
+              <div class="container">
+                <div class="hero-slider__content">
+                  <h2 class="hero-slider__title">
+                    gourmet gifts
+
+                    <span class="hero-slider__title hero-slider__title--accent"
+                      >for any occasion</span
+                    >
+                  </h2>
+                  <a class="hero-slider__link button-animation" href="#"
+                    >shop</a
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li
+            class="hero-slider__items"
+            style="background-image: url(images/hero-slider/slider2.jpg)"
+          >
+            <div class="hero-slider__item">
+              <div class="container">
+                <div class="hero-slider__content">
+                  <h2 class="hero-slider__title">
+                    Chocolate
+
+                    <span class="hero-slider__title hero-slider__title--accent">
+                      Strawberries Boxes</span
+                    >
+                  </h2>
+                  <div class="hero-slider__text">
+                    <p>Freshly Made Every Morning</p>
+                  </div>
+                  <a class="hero-slider__link button-animation" href="#"
+                    >shop</a
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li
+            class="hero-slider__items"
+            style="background-image: url(images/hero-slider/slider3.jpg)"
+          >
+            <div class="hero-slider__item">
+              <div class="container">
+                <div class="hero-slider__content">
+                  <h2 class="hero-slider__title">
+                    Roses & Chocolate
+                    <span class="hero-slider__title hero-slider__title--accent"
+                      >Strawberries Arrangements</span
+                    >
+                  </h2>
+                  <div class="hero-slider__text">
+                    <p>Handcrafted&Fresh Edible Bouquets</p>
+                    <a class="hero-slider__link button-animation" href="#"
+                      >shop</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="advantages">
+        <h2 class="sr-only">our benefits</h2>
+        <div class="container">
+          <ul class="advantages__list">
+            <li
+              class="advantages__item"
+              style="background-image: url(images/header/noun-delivery.svg)"
+            >
+              <span class="advantages__text"
+                >Next day delivery /7 days a week
+              </span>
+            </li>
+            <li
+              class="advantages__item"
+              style="background-image: url(images/header/noun-chocolate.svg)"
+            >
+              <span class="advantages__text"
+                >Handcrafted chocolate strawberries & bouquets</span
+              >
+            </li>
+            <li
+              class="advantages__item"
+              style="background-image: url(images/header/noun-gift.svg)"
+            >
+              <span class="advantages__text">Free delivery over $199</span>
+            </li>
+
+            <li
+              class="advantages__item"
+              style="background-image: url(images/header/noun-cookhat.svg)"
+            >
+              <span class="advantages__text">Free delivery over $199</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="top-products section">
+        <div class="container">
+          <h2 class="title">OUR BEST SELLERS</h2>
+
+          <p class="top-products__subtitle">
+            Select a category or go to the section with a convinient filter by
+            product
+          </p>
+          <div data-ref="container-1">
+            <ul class="products-menu">
+              <li class="products-menu__item">
+                <button
+                  class="products-menu__btn"
+                  data-filter="all"
+                  type="button"
+                >
+                  ALL PRODUCTs
+                </button>
+              </li>
+              <li class="products-menu__item">
+                <button
+                  class="products-menu__btn"
+                  data-filter=".category-a"
+                  type="button"
+                >
+                  happy birthday
+                </button>
+              </li>
+              <li class="products-menu__item">
+                <button
+                  class="products-menu__btn"
+                  data-filter=".category-b"
+                  type="button"
+                >
+                  Congratulation
+                </button>
+              </li>
+              <li class="products-menu__item">
+                <button
+                  class="products-menu__btn"
+                  data-filter=".category-c"
+                  type="button"
+                >
+                  Anniversary
+                </button>
+              </li>
+              <li class="products-menu__item">
+                <button
+                  class="products-menu__btn"
+                  data-filter=".category-d"
+                  type="button"
+                >
+                  Get well
+                </button>
+              </li>
+            </ul>
+
+            <ul class="top-products__list">
+              <li class="top-products__item mix category-a">
+                <article class="product">
+                  <a class="product__link" href="#">
+                    <img
+                      class="product__img"
+                      src="images/product-cart/armchair.jpg"
+                      alt="armchair"
+                      width="219"
+                      height="218"
+                    />
+                  </a>
+                  <h3 class="product__subtitle">HUGS & KISSES</h3>
+                  <div class="product__wrapper">
+                    <span class="product__price">
+                      79.00-149.00 <span>&#36;</span></span
+                    >
+
+                    <button class="product__favorites" type="button">
+                      <span class="sr-only">Add to favourites </span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="product__cart button-animation"
+                      type="button"
+                    >
+                      <span class="sr-only"> Add to cart</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+
+              <li class="top-products__item mix category-a">
+                <article class="product">
+                  <a class="product__link" href="#">
+                    <img
+                      class="product__img"
+                      src="images/product-cart/carpet.jpg"
+                      alt="carpet"
+                      width="219"
+                      height="218"
+                    />
+                  </a>
+                  <h3 class="product__subtitle">STRAWBERRY BLISS</h3>
+                  <div class="product__wrapper">
+                    <span class="product__price">
+                      139.00-269.00 <span>&#36;</span></span
+                    >
+                    <button class="product__favorites" type="button">
+                      <span class="sr-only"> Add to favourites</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+
+                    <button
+                      class="product__cart button-animation"
+                      type="button"
+                    >
+                      <span class="sr-only"> Add to cart</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+
+              <li class="top-products__item mix category-a">
+                <article class="product">
+                  <a class="product__link" href="#">
+                    <img
+                      class="product__img"
+                      src="images/product-cart/chairs.jpg"
+                      alt="chairs"
+                      width="219"
+                      height="218"
+                    />
+                  </a>
+                  <h3 class="product__subtitle">BE MY VALENTINE</h3>
+                  <div class="product__wrapper">
+                    <span class="product__price">
+                      109.00-249.00<span>&#36;</span></span
+                    >
+
+                    <button class="product__favorites" type="button">
+                      <span class="sr-only">Add to favourites</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="product__cart button-animation"
+                      type="button"
+                    >
+                      <span class="sr-only">Add to cart</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="top-products__item mix category-b">
+                <article class="product">
+                  <a class="product__link" href="#">
+                    <img
+                      class="product__img"
+                      src="images/product-cart/coffee-table.jpg"
+                      alt="coffee-table"
+                      width="219"
+                      height="218"
+                    />
+                  </a>
+                  <h3 class="product__subtitle">TENDER ADORATION</h3>
+                  <div class="product__wrapper">
+                    <span class="product__price">
+                      135.00-269.00 <span>&#36;</span></span
+                    >
+
+                    <button class="product__favorites" type="button">
+                      <span class="sr-only"> Add to favourites</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="product__cart button-animation"
+                      type="button"
+                    >
+                      <span class="sr-only">Add to cart</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="top-products__item mix category-c">
+                <article class="product">
+                  <a class="product__link" href="#">
+                    <img
+                      class="product__img"
+                      src="images/product-cart/for-storage.jpg"
+                      alt="for storage"
+                      width="219"
+                      height="218"
+                    />
+                  </a>
+                  <h3 class="product__subtitle">COTTON CANDY</h3>
+                  <div class="product__wrapper">
+                    <span class="product__price">
+                      65.00-175.00 <span>&#36;</span></span
+                    >
+
+                    <button class="product__favorites" type="button">
+                      <span class="sr-only"> Add to favourites</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="product__cart button-animation"
+                      type="button"
+                    >
+                      <span class="sr-only">Add to cart</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="top-products__item mix category-d">
+                <article class="product">
+                  <a class="product__link" href="#">
+                    <img
+                      class="product__img"
+                      src="images/product-cart/wooden.jpg"
+                      alt="wooden"
+                      width="219"
+                      height="218"
+                    />
+                  </a>
+                  <h3 class="product__subtitle">TRUE LOVE</h3>
+                  <div class="product__wrapper">
+                    <span class="product__price">29 <span>&#36;</span></span>
+                    <button class="product__favorites" type="button">
+                      <span class="sr-only"> Add to favourites</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <button
+                      class="product__cart button-animation"
+                      type="button"
+                    >
+                      <span class="sr-only"> Add to cart</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="top-products__item mix category-c">
+                <article class="product">
+                  <a class="product__link" href="#">
+                    <img
+                      class="product__img"
+                      src="images/product-cart/shelf.jpg"
+                      alt="shelf"
+                      width="219"
+                      height="218"
+                    />
+                  </a>
+                  <h3 class="product__subtitle">WHITE ROSES</h3>
+                  <div class="product__wrapper">
+                    <span class="product__price">
+                      89.00-345.00 <span>&#36;</span></span
+                    >
+                    <button
+                      class="product__cart button-animation"
+                      type="button"
+                    >
+                      <span class="sr-only">Add to cart</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                      </svg>
+                    </button>
+
+                    <button class="product__favorites" type="button">
+                      <span class="sr-only">Add to favourites</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="top-products__item mix category-b">
+                <article class="product">
+                  <a class="product__link" href="#">
+                    <img
+                      class="product__img"
+                      src="images/product-cart/things.jpg"
+                      alt="things"
+                      width="219"
+                      height="218"
+                    />
+                  </a>
+                  <h3 class="product__subtitle">SWEET PERFECTION</h3>
+                  <div class="product__wrapper">
+                    <span class="product__price">
+                      95.00-229.00 <span>&#36;</span></span
+                    >
+                    <button class="product__favorites" type="button">
+                      <span class="sr-only">Add to favourites</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+
+                    <button
+                      class="product__cart button-animation"
+                      type="button"
+                    >
+                      <span class="sr-only"> Add to cart</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#cart"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+
+          <a  class="top-products__btn" href="http://localhost:3000/catalog-page.html" target="_blank">VIEW ALL</a>
+        </div>
+      </section>
+
+      <section class="banners">
+        <div class="container">
+          <ul class="banners__list">
+            <li
+              class="banners__item"
+              style="background-image: url(images/banners/banner3.jpg)"
+            >
+              <span class="banners__text banners__text--white"
+                >Huge selection</span
+              >
+              <span class="banners__title banners__title--white">
+                We have 10,000 stores from 950 cities all over the world on one
+                site. Florist boutiques, culinary shops, jewelry stores, and
+                farm stores. Take your pick!<span>&#8372;</span>
+              </span>
+              <a class="banners__link banners__link--white" href="#"
+                >Go shopping</a
+              >
+            </li>
+
+            <li
+              class="banners__item"
+              style="background-image: url(images/banners/banner1.jpg)"
+            >
+              <span class="banners__text">Always in stock</span>
+              <span class="banners__title"
+                >We only show items that are in stock and available for
+                delivery</span
+              >
+              <a class="banners__link" href="#">go shop</a>
+            </li>
+
+            <li
+              class="banners__item"
+              style="background-image: url(images/banners/banner2.jpg)"
+            >
+              <span class="banners__text">Goods as pictured</span>
+              <span class="banners__title"
+                >Send a photo of the product before delivery: make sure
+                everything looks just as you imagined</span
+              >
+              <a class="banners__link" href="#">go shop</a>
+            </li>
+          </ul>
+
+          <ul></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <ul class="footer__info">
+            <li class="footer__item">
+              <span class="footer__title">SERVICES</span>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link link-animation" href="#" target="_blank">
+                Delivery & Pick Up
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link-animation" href="#" target="_blank">
+                FAQ
+              </a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link link-animation" href="#" target="_blank">
+                How to consume & store an edible gifts
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link-animation" href="#" target="_blank">
+                How to carry the flowers
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link-animation" href="#" target="_blank">
+                Corporate gifts
+              </a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link link-animation" href="#" target="_blank">
+                Privacy Policy
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link-animation" href="#" target="_blank">
+                Cancelation & Refund Policy
+              </a>
+            </li>
+            <li class="footer__item">
+              <a
+                class="footer__link link-animation"
+                href="#"
+                target="_blank"
+              >
+                Terms Of Service
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer__inner">
+            <address class="footer__address">
+              <span class="footer__title">CONTACT US</span>
+              <ul class="contacts">
+                <li class="contacts__item">
+                  <a class="contacts__link link-animation" href="#">
+                    <svg>
+                      <use xlink:href="images/sprite.svg#instagram"></use>
+                    </svg>
+                    @strawbarbie_syd
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a
+                    class="contacts__link link-animation"
+                    href="mailto:strawbarbie.syd@gmail.com"
+                  >
+                    <svg>
+                      <use xlink:href="images/sprite.svg#email"></use>
+                    </svg>
+                    strawbarbie.syd@gmail.com
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a
+                    class="contacts__link link-animation"
+                    href="tel:+61423051336"
+                  >
+                    <svg>
+                      <use xlink:href="images/sprite.svg#icon-tel"></use>
+                    </svg>
+                    +61423051336
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <span class="footer__title footer--subtitle">Pick Up Address:</span>
+                  <a class="contacts__link link-animation" href="#">
+                    1 C Betty Cuthbert Avenue, Sydney Olympic Park, 2127
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <span class="footer__text"> ©2023</span>
+          </div>
+
+          <ul class="accept">
+            <li class="accept__item">
+              <img
+                class="accept__img"
+                src="images/visa.svg"
+                alt="Visa"
+                width="90"
+                height="50"
+              />
+            </li>
+            <li class="accept__item">
+              <img
+                class="accept__img"
+                src="images/mastercard.svg"
+                alt="MasterCard"
+                width="90"
+                height="50"
+              />
+            </li>
+
+            <li class="accept__item">
+              <img
+                class="accept__img"
+                src="images/applepay.svg"
+                alt="apple pay"
+                width="90"
+                height="50"
+              />
+            </li>
+
+            <li class="accept__item">
+              <img
+                class="accept__img"
+                src="images/paypal.svg"
+                alt=" pay pal"
+                width="90"
+                height="50"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

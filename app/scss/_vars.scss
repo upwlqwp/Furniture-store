@@ -1,0 +1,42 @@
+$text-color: #433e3f;
+$footer-bg: #e7e7e6;
+$dark-text: #121212;
+$white: #fff;
+$text-accent: #f3f3f2;
+$hover-color: #d0ccb7;
+$fill-svg: #d6b553;
+$hover-bg: #f2f2f2;
+
+
+
+
+
+%background {
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+%flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+%rudablack-900 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 900;
+}
+
+%rudabold-700 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 700;
+}
+
+%rudaregular-400 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 400;
+}
+
+%rudasemibold-600 {
+  font-family: "Ruda", sans-serif;
+  font-weight: 600;
+}

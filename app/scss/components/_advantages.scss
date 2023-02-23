@@ -1,0 +1,32 @@
+.advantages {
+  padding: 45px 0;
+  background: linear-gradient(180deg, #ffdda1 0%, #f1ebe5 100%);
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  &__item {
+    text-align: center;
+    padding-top: 70px;
+    max-width: 220px;
+    background-position: top;
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+
+    &:not(:last-child) {
+      margin-right: 150px;
+    }
+  }
+
+
+  &__text {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text-color;
+  }
+}

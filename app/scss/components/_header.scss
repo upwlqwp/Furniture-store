@@ -1,0 +1,145 @@
+.header {
+    &__top {
+      background-color:  #d4c7b0 ;
+      border-bottom: 1px solid #d4c7b0;
+    }
+  
+    &__bottom {
+      padding: 10px 0;
+      background-color: #d4c7b0 ;
+    }
+  
+    &__wrapper {
+      @extend %flex;
+      align-items: center;
+    }
+  
+    &__info {
+      padding: 14px 0;
+    }
+  }
+
+  .information {
+    display: flex;
+  
+    &__item {
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
+  
+      &--more {
+        &:not(:last-child) {
+          margin-right: 48px;
+        }
+      }
+  
+      svg {
+        transform: translateY(5px);
+        margin-right: 12px;
+        fill: #3f4238;
+        width: 32px;
+        height: 22px;
+  
+        &:active {
+          fill: $fill-svg;
+        }
+      }
+    }
+
+    &__link {
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 1.4;
+      padding: 5px 0;
+      text-transform: uppercase;
+      transition: opacity 0.3s, box-shadow 0.4s, border-radius 0.4s, color 0.3s;
+    }
+  }
+
+ 
+  
+  .search-form {
+    max-width: 576px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    margin-right: 30px;
+  
+    &__input {
+      padding: 14px 10px 14px 40px;
+      width: 100%;
+      background-image: url("../images/header/icon-search.svg");
+      background-repeat: no-repeat;
+      background-position: 12px;
+      border-radius: 6px ;
+      transition: color 0.4s;
+  
+  
+      &:hover::placeholder {
+        color: $dark-text;
+      }
+  
+      &:focus {
+        box-shadow: 0 0 0 4px $dark-text;
+      }
+    }
+  
+    
+  }
+  
+  .user-nav {
+    position: relative;
+    display: flex;
+  
+    &__item {
+      &:not(:last-child) {
+        margin-right: 17px;
+      }
+    }
+  
+    &__btn {
+      @extend %background;
+      border-radius: 3px;
+      padding: 10px;
+      width: 50px;
+      height: 50px;
+      transition: background-color 0.3s, box-shadow 0.4s;
+  
+      &:hover {
+        background-color: rgba($color: #fff, $alpha: 0.1);
+      }
+  
+      &:focus {
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: inset 0 0 0 3px $text-color;
+      }
+  
+      &:active {
+        box-shadow: none;
+      }
+    }
+  
+    svg {
+      fill: $white;
+      width: 32px;
+      height: 32px;
+  
+      &:active {
+        fill: #ffffff80;
+      }
+    }
+  
+    &__num {
+      font-weight: 600;
+      text-align: center;
+      top: 0;
+      transform: translateX(-20px);
+      font-size: 10px;
+      line-height: 18px;
+      color: $text-color;
+      position: absolute;
+      padding: 0 3px;
+      border-radius: 50px;
+      background-color: $white;
+    }
+  }

@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="stylesheet" href="css/style.min.css" />
+  <title>Flower shop</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__info">
+            <ul class="information">
+              <li class="information__item information__item--more">
+                <a class="information__link link-animation" href="#">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#icon-del"></use>
+                  </svg>
+                  Delevery
+                </a>
+              </li>
+              <li class="information__item information__item--more">
+                <a class="information__link link-animation" href="#">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#icon-tel"></use>
+                  </svg>
+                  Address
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="information">
+            <li class="information__item">
+              <a class="information__link link-animation" href="#">SPECIAL</a>
+            </li>
+            <li class="information__item">
+              <a class="information__link link-animation" href="#">FAQ</a>
+            </li>
+            <li class="information__item">
+              <a class="information__link link-animation" href="#"
+                >CONTACTS</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="logo" href="#">
+            <img
+              class="logo__img"
+              src="images/logo.svg"
+              alt="логотип"
+              width="70"
+              height="50"
+            />
+          </a>
+
+          <form class="search-form" action="#">
+            <label class="sr-only" for="form-search">
+              Product Search Form</label
+            >
+            <input
+              class="search-form__input"
+              id="form-search"
+              type="search"
+              placeholder="Search..."
+              required
+              name="search"
+            />
+          </form>
+
+          <ul class="user-nav">
+            <li class="user-nav__item">
+              <button class="user-nav__btn" type="button">
+                <svg>
+                  <use xlink:href="images/sprite.svg#user-link"></use>
+                </svg>
+                <span class="sr-only">Go to profile</span>
+              </button>
+            </li>
+            <li class="user-nav__item">
+              <button class="user-nav__btn" type="button">
+                <svg>
+                  <use xlink:href="images/sprite.svg#favorite"></use>
+                </svg>
+                <span class="sr-only"> go to favorite</span>
+                <span class="user-nav__num"> 12 </span>
+              </button>
+            </li>
+            <li class="user-nav__item">
+              <button class="user-nav__btn" type="button">
+                <svg>
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
+                <span class="sr-only"> go to cart</span>
+                <span class="user-nav__num"> 12 </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="http://localhost:3000">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">Catalog</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+
+
+
+    
+    <section class="catalog-page">
+      <div class="container">
+        <h1 class="catalog-page__title">Catalog pro</h1>
+        <div class="catalog-page__inner">
+
+          <ul class="catalog-page__list filter">
+            <li class="catalog-page__item">
+              <article class="categories">
+                <div class="filter__wrapper">
+                  <span class="filter__title"> Categories</span>
+                </div>
+                <div class="catalog ">
+                  <button class="catalog__btn dropdown-toggle" data-path="one " type="button">
+                    Каталог продуктов
+                  </button>
+      
+                  <div class="catalog__content" data-target="one" >
+                    <ul class="catalog__list">
+                      <li class="catalog__item">
+                        <a class="catalog__link" href="#"> tea</a>
+                      </li>
+                      <li class="catalog__item">
+                        <a class="catalog__link" href="#"> tea</a>
+                      </li>
+                      <li class="catalog__item">
+                        <a class="catalog__link" href="#"> tea</a>
+                      </li>
+                      <li class="catalog__item">
+                        <a class="catalog__link" href="#"> tea</a>
+                      </li>
+                      <li class="catalog__item">
+                        <a class="catalog__link" href="#"> tea</a>
+                      </li>
+                      <li class="catalog__item">
+                        <a class="catalog__link" href="#"> tea</a>
+                      </li>
+                    </ul>
+                  </div>
+      
+                </div>
+              </article>
+            </li>
+
+            <li class="catalog-page__item">
+              <article class="offer">
+                <div class="filter__wrapper">
+                  <span class="filter__title"> Offer</span>
+                </div>
+                <div class="filter__inner">
+                  <form class="offer__form" action="#">
+                    <label class="offer__label">
+                      <input class="offer__input" type="checkbox">
+                      <span class="offer__checkbox"></span>
+                      <span class="filter__text">with %</span>
+                    </label>
+                    <label class="offer__label">
+                      <input class="offer__input" type="checkbox">
+                      <span class="offer__checkbox"></span>
+                      <span class="filter__text">New</span>
+                    </label>
+                    <label class="offer__label">
+                      <input class="offer__input" type="checkbox">
+                      <span class="offer__checkbox"></span>
+                      <span class="filter__text">Hit</span>
+                    </label>
+                  </form>
+                </div>
+              </article>
+            </li>
+
+            <li class="catalog-page__item">
+              <article class="offer">
+                <div class="filter__wrapper">
+                  <span class="filter__title"> Brand</span>
+                </div>
+                <div class="filter__inner">
+
+                  <form class="offer__form" action="#">
+                    <label class="offer__label">
+                      <input class="offer__input" type="checkbox">
+                      <span class="offer__checkbox"></span>
+                      <span class="filter__text">Coca Cola</span>
+                    </label>
+                    <label class="offer__label">
+                      <input class="offer__input" type="checkbox">
+                      <span class="offer__checkbox"></span>
+                      <span class="filter__text">Pepsi</span>
+                    </label>
+                    <label class="offer__label">
+                      <input class="offer__input" type="checkbox">
+                      <span class="offer__checkbox"></span>
+                      <span class="filter__text">Sprite</span>
+                    </label>
+
+                    <label class="offer__label">
+                      <input class="offer__input" type="checkbox">
+                      <span class="offer__checkbox"></span>
+                      <span class="filter__text">Fanta</span>
+                    </label>
+                    <label class="offer__label">
+                      <input class="offer__input" type="checkbox">
+                      <span class="offer__checkbox"></span>
+                      <span class="filter__text">RedBull</span>
+                    </label>
+                    <label class="offer__label">
+                      <input class="offer__input" type="checkbox">
+                      <span class="offer__checkbox"></span>
+                      <span class="filter__text">Dr Pepper</span>
+                    </label>
+                  </form>
+
+                </div>
+              </article>
+
+
+
+            </li>
+
+            <li class="catalog-page__item">
+              <article class="price">
+                <div class="filter__wrapper">
+                  <span class="filter__title"> Price</span>
+                </div>
+
+                <div class="filter__inner">
+
+                  <form action="#">
+                    <label class="price__label ">
+                      <span class="price__text ">from</span>
+                      <span class="price__from">100</span>
+                      <span class="price__currency">&#8381</span>
+                      <span class="price__text">to</span>
+                      <span class="price__to">1000</span>
+                      <span class="price__currency">&#8381</span>
+
+
+                    </label>
+                    <input class="price__filter" type="number" data-min="100" data-max="1000">
+
+                  </form>
+
+                </div>
+
+              </article>
+            </li>
+          </ul>
+
+          <div class="catalog-page__content">
+
+
+            <div class="top-content">
+              <div class="top-content__form">
+                <select class="top-content__sort select-style">
+                  <option value="">Name</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                </select>
+                <select class="top-content__show select-style">
+                  <option value="">по 12</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                </select>
+              </div>
+              <div class="top-content__buttons">
+                <button class="top-content__btn top-content__btn--active btn-grid" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#btn-grid"></use>
+                  </svg>
+                </button>
+                <button class="top-content__btn btn-list" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#btn-list"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="catalog-page__wrapper">
+              <ul class="top-products__list catalog__products-grid ">
+                <li class="top-products__item mix category-a">
+                  <article class="product">
+                    <a class="product__link" href="#">
+                      <img
+                        class="product__img"
+                        src="images/product-cart/armchair.jpg"
+                        alt="Ананас"
+                        width="219"
+                        height="218"
+                      />
+                    </a>
+                    <h3 class="product__subtitle">HUGS & KISSES</h3>
+                    <div class="product__wrapper">
+                      <span class="product__price">
+                        79.00-149.00 <span>&#36;</span></span
+                      >
+  
+                      <button class="product__favorites" type="button">
+                        <span class="sr-only">Add to favourites </span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                      </button>
+                      <button
+                        class="product__cart button-animation"
+                        type="button"
+                      >
+                        <span class="sr-only"> Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
+  
+                <li class="top-products__item mix category-a">
+                  <article class="product">
+                    <a class="product__link" href="#">
+                      <img
+                        class="product__img"
+                        src="images/product-cart/carpet.jpg"
+                        alt="Лимон"
+                        width="219"
+                        height="218"
+                      />
+                    </a>
+                    <h3 class="product__subtitle">STRAWBERRY BLISS</h3>
+                    <div class="product__wrapper">
+                      <span class="product__price">
+                        139.00-269.00 <span>&#36;</span></span
+                      >
+                      <button class="product__favorites" type="button">
+                        <span class="sr-only"> Add to favourites</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                      </button>
+  
+                      <button
+                        class="product__cart button-animation"
+                        type="button"
+                      >
+                        <span class="sr-only"> Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
+  
+                <li class="top-products__item mix category-a">
+                  <article class="product">
+                    <a class="product__link" href="#">
+                      <img
+                        class="product__img"
+                        src="images/product-cart/chairs.jpg"
+                        alt="Питахайя красная"
+                        width="219"
+                        height="218"
+                      />
+                    </a>
+                    <h3 class="product__subtitle">BE MY VALENTINE</h3>
+                    <div class="product__wrapper">
+                      <span class="product__price">
+                        109.00-249.00<span>&#36;</span></span
+                      >
+  
+                      <button class="product__favorites" type="button">
+                        <span class="sr-only">Add to favourites</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                      </button>
+                      <button
+                        class="product__cart button-animation"
+                        type="button"
+                      >
+                        <span class="sr-only">Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
+                <li class="top-products__item mix category-b">
+                  <article class="product">
+                    <a class="product__link" href="#">
+                      <img
+                        class="product__img"
+                        src="images/product-cart/coffee-table.jpg"
+                        alt="Кетчуп томатный"
+                        width="219"
+                        height="218"
+                      />
+                    </a>
+                    <h3 class="product__subtitle">TENDER ADORATION</h3>
+                    <div class="product__wrapper">
+                      <span class="product__price">
+                        135.00-269.00 <span>&#36;</span></span
+                      >
+  
+                      <button class="product__favorites" type="button">
+                        <span class="sr-only"> Add to favourites</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                      </button>
+                      <button
+                        class="product__cart button-animation"
+                        type="button"
+                      >
+                        <span class="sr-only">Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
+                <li class="top-products__item mix category-a">
+                  <article class="product">
+                    <a class="product__link" href="#">
+                      <img
+                        class="product__img"
+                        src="images/product-cart/armchair.jpg"
+                        alt="Ананас"
+                        width="219"
+                        height="218"
+                      />
+                    </a>
+                    <h3 class="product__subtitle">HUGS & KISSES</h3>
+                    <div class="product__wrapper">
+                      <span class="product__price">
+                        79.00-149.00 <span>&#36;</span></span
+                      >
+  
+                      <button class="product__favorites" type="button">
+                        <span class="sr-only">Add to favourites </span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                      </button>
+                      <button
+                        class="product__cart button-animation"
+                        type="button"
+                      >
+                        <span class="sr-only"> Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
+  
+                <li class="top-products__item mix category-a">
+                  <article class="product">
+                    <a class="product__link" href="#">
+                      <img
+                        class="product__img"
+                        src="images/product-cart/carpet.jpg"
+                        alt="Лимон"
+                        width="219"
+                        height="218"
+                      />
+                    </a>
+                    <h3 class="product__subtitle">STRAWBERRY BLISS</h3>
+                    <div class="product__wrapper">
+                      <span class="product__price">
+                        139.00-269.00 <span>&#36;</span></span
+                      >
+                      <button class="product__favorites" type="button">
+                        <span class="sr-only"> Add to favourites</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                      </button>
+  
+                      <button
+                        class="product__cart button-animation"
+                        type="button"
+                      >
+                        <span class="sr-only"> Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
+  
+                <li class="top-products__item mix category-a">
+                  <article class="product">
+                    <a class="product__link" href="#">
+                      <img
+                        class="product__img"
+                        src="images/product-cart/chairs.jpg"
+                        alt="Питахайя красная"
+                        width="219"
+                        height="218"
+                      />
+                    </a>
+                    <h3 class="product__subtitle">BE MY VALENTINE</h3>
+                    <div class="product__wrapper">
+                      <span class="product__price">
+                        109.00-249.00<span>&#36;</span></span
+                      >
+  
+                      <button class="product__favorites" type="button">
+                        <span class="sr-only">Add to favourites</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                      </button>
+                      <button
+                        class="product__cart button-animation"
+                        type="button"
+                      >
+                        <span class="sr-only">Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
+                <li class="top-products__item mix category-b">
+                  <article class="product">
+                    <a class="product__link" href="#">
+                      <img
+                        class="product__img"
+                        src="images/product-cart/coffee-table.jpg"
+                        alt="Кетчуп томатный"
+                        width="219"
+                        height="218"
+                      />
+                    </a>
+                    <h3 class="product__subtitle">TENDER ADORATION</h3>
+                    <div class="product__wrapper">
+                      <span class="product__price">
+                        135.00-269.00 <span>&#36;</span></span
+                      >
+  
+                      <button class="product__favorites" type="button">
+                        <span class="sr-only"> Add to favourites</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                      </button>
+                      <button
+                        class="product__cart button-animation"
+                        type="button"
+                      >
+                        <span class="sr-only">Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
+               
+                <li class="top-products__item mix category-c">
+                  <article class="product">
+                    <a class="product__link" href="#">
+                      <img
+                        class="product__img"
+                        src="images/product-cart/for-storage.jpg"
+                        alt="Морковь молодая"
+                        width="219"
+                        height="218"
+                      />
+                    </a>
+                    <h3 class="product__subtitle">COTTON CANDY</h3>
+                    <div class="product__wrapper">
+                      <span class="product__price">
+                        65.00-175.00 <span>&#36;</span></span
+                      >
+  
+                      <button class="product__favorites" type="button">
+                        <span class="sr-only"> Add to favourites</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                      </button>
+                      <button
+                        class="product__cart button-animation"
+                        type="button"
+                      >
+                        <span class="sr-only">Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
+
+                
+              </ul>
+
+
+
+
+              <div class="pagination">
+
+                <button class="promotions__btn btn-green pagination__btn" type="button">
+                  Показать еще
+                </button>
+
+
+                <ul class="pagination__list">
+                  <li class="pagination__item">
+                    <a class="pagination__prev pagination-arrow" href="#"></a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">2</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">...</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">9</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">10</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__next pagination-arrow" href="#"></a>
+                  </li>
+                </ul>
+
+
+              </div>
+
+
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="advantages">
+      <h2 class="sr-only">наши преимущества</h2>
+      <div class="container">
+        <ul class="advantages__list">
+          <li class="advantages__item" style="background-image: url(images/header/scooter.svg)">
+            <h3 class="advantages__title">Бесплатная доставка</h3>
+            <span class="advantages__text">Для заказов на сумму от 500 <span>&#8372;</span></span>
+          </li>
+          <li class="advantages__item" style="background-image: url(images/header/return.svg)">
+            <h3 class="advantages__title">Возврат товара</h3>
+            <span class="advantages__text">Если товары были испорчены</span>
+          </li>
+          <li class="advantages__item" style="background-image: url(images/header/support.svg)">
+            <h3 class="advantages__title">Поддержка 24/7</h3>
+            <span class="advantages__text">Лучшие операторы </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <ul class="footer__info">
+          <li class="footer__item">
+            <span class="footer__title">SERVICES</span>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link link-animation" href="#" target="_blank">
+              Delivery & Pick Up
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link-animation" href="#" target="_blank">
+              FAQ
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link link-animation" href="#" target="_blank">
+              How to consume & store an edible gifts
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link-animation" href="#" target="_blank">
+              How to carry the flowers
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link-animation" href="#" target="_blank">
+              Corporate gifts
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link link-animation" href="#" target="_blank">
+              Privacy Policy
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link link-animation" href="#" target="_blank">
+              Cancelation & Refund Policy
+            </a>
+          </li>
+          <li class="footer__item">
+            <a
+              class="footer__link link-animation"
+              href="#"
+              target="_blank"
+            >
+              Terms Of Service
+            </a>
+          </li>
+        </ul>
+
+        <div class="footer__inner">
+          <address class="footer__address">
+            <span class="footer__title">CONTACT US</span>
+            <ul class="contacts">
+              <li class="contacts__item">
+                <a class="contacts__link link-animation" href="#">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#instagram"></use>
+                  </svg>
+                  @strawbarbie_syd
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a
+                  class="contacts__link link-animation"
+                  href="mailto:strawbarbie.syd@gmail.com"
+                >
+                  <svg>
+                    <use xlink:href="images/sprite.svg#email"></use>
+                  </svg>
+                  strawbarbie.syd@gmail.com
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a
+                  class="contacts__link link-animation"
+                  href="tel:+61423051336"
+                >
+                  <svg>
+                    <use xlink:href="images/sprite.svg#icon-tel"></use>
+                  </svg>
+                  +61423051336
+                </a>
+              </li>
+              <li class="contacts__item">
+                <span class="footer__title footer--subtitle">Pick Up Address:</span>
+                <a class="contacts__link link-animation" href="#">
+                  1 C Betty Cuthbert Avenue, Sydney Olympic Park, 2127
+                </a>
+              </li>
+            </ul>
+          </address>
+          <span class="footer__text"> ©2022 StrawBarbie</span>
+        </div>
+
+        <ul class="accept">
+          <li class="accept__item">
+            <img
+              class="accept__img"
+              src="images/visa.svg"
+              alt="платежной система Visa"
+              width="90"
+              height="50"
+            />
+          </li>
+          <li class="accept__item">
+            <img
+              class="accept__img"
+              src="images/mastercard.svg"
+              alt="платежной система MasterCard"
+              width="90"
+              height="50"
+            />
+          </li>
+
+          <li class="accept__item">
+            <img
+              class="accept__img"
+              src="images/applepay.svg"
+              alt="платежной система MasterCard"
+              width="90"
+              height="50"
+            />
+          </li>
+
+          <li class="accept__item">
+            <img
+              class="accept__img"
+              src="images/paypal.svg"
+              alt="платежной система MasterCard"
+              width="90"
+              height="50"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+ 
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
